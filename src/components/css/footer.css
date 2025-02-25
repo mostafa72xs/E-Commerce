@@ -15,6 +15,11 @@ footer{
     align-items: flex-start;
     gap: 87px;
 }
+.eims{
+    width:130px;
+    height: 24px;
+    background-color: transparent !important;
+}
 ul{
     list-style:none;
     margin-left: -30px;

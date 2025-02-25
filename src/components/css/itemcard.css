@@ -1,0 +1,103 @@
+.card{
+    width:270px;
+    height:350px;
+    overflow:hidden !important;
+    border:none !important;
+}
+
+.boximg{
+    width: 270px;
+    height: 250px;
+    background-color: #f5f5f5;
+}
+.boximg img{
+    width: 270px;
+    z-index: 2;
+    height: 250px;
+}
+.cbody{
+    width:auto;
+    height:100px;
+    text-align: left;
+    overflow: hidden;
+}
+.cbody h1{
+    font-size: 16px;
+    text-transform: capitalize;
+    height: 24px;
+    font-weight: 500;
+    overflow: hidden;
+    line-height: 24px;
+}
+.cbody p{
+    color:#DB4444;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 24px;
+}
+.dis{
+    color:grey;
+    text-decoration: line-through;
+    
+}
+.addbtn{
+    width:270px;
+    height:41px;
+    background-color:black;
+    color: white;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    display: none;
+    margin-top: -41px;
+    position: absolute;
+    z-index: 5;
+    transition: all 0.5s;
+
+}
+.boximg:hover > .addbtn{
+    display:block;
+    transition: all 0.5s;
+
+}
+.disnumber{
+    width: 55px;
+    height: 26px;
+    font-size: 12px;
+    font-weight: 500;
+    color:white;
+    background-color: #DB4444;
+    border-radius:4px;
+    position:absolute;
+    z-index: 5;
+    float: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    display:grid;
+    place-items: center;
+}
+
+.saveicon{
+    width: 34px;
+    height: 78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position:absolute;
+    z-index: 5;
+    margin-left: 224px;
+    margin-top:5px;
+}
+
+.wh ,.like{
+    width:34px;
+    background-color: white;
+    height:34px;
+    border:none;
+    border-radius: 50px;
+}
+@media (max-width:992px){
+    .card{
+        margin-left: 40px;
+    }
+}

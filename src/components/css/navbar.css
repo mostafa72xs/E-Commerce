@@ -1,0 +1,146 @@
+.nav-link {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
+.lulu{
+    margin-left: 100px !important;
+    width:500px
+}
+.serch{
+    width:243px;
+    height:38px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #dee2e6;
+}
+.serch input{
+    width:163px;
+    background-color: #dee2e6 !important;
+    height:24px;
+}
+.serch input::placeholder{
+    font-size: 12px;
+}
+.accover{
+    position:absolute;
+    background-color: #dee2e6;
+    width:225px;
+    height: 208px;
+    display:none;
+    color:grey;
+    border-radius: 4px;
+    margin-left: 65%;
+    margin-top: 18%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.accover p{
+    width:90%;
+}
+.WL{
+    margin-left: -165px;
+    margin-top: 15px;
+}
+.accover ul{
+    width:90%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.accover li:hover{
+    background-color: #DB4444;
+    color:white;
+}
+.accover li{
+    color: gray;
+    width:100%;
+}
+.accover button:hover{
+    background-color: #DB4444;
+    color:white;
+}
+.accover button{
+    width: 50%;
+    color: grey;
+    border: none;
+}
+.li{
+    color:  black !important;
+    font-size: 16px;
+    font-weight:bold;
+}
+.nav-link:hover {
+    color: #DB4444;
+}
+
+
+.lulu{
+    font-size: 20px !important;
+}
+
+/* Cart badge styling */
+.badge {
+    font-size: 0.75rem;
+    padding: 0.25em 0.6em;
+}
+
+/* Search button styling */
+.btn-outline-secondary {
+    border-color: #dee2e6;
+}
+
+/* User profile styling */
+.profile-section {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.profile-section button {
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
+    color: #DB4444;
+    cursor: pointer;
+}
+
+/* Mobile menu adjustments */
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+@media (max-width: 992px) {
+    .navbar-collapse {
+        padding-top: 1rem;
+    }
+    
+    .navbar-nav {
+        margin-bottom: 1rem;
+    }
+    ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    }
+    .lulu{
+        margin-left:-100px !important;
+    }
+    .WL{position: relative !important;
+        margin-left: -75px;
+        margin-top: 205px;
+    }
+}

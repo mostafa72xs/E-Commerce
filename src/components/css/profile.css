@@ -1,0 +1,74 @@
+.accounts{
+    height: 630px;
+    display: flex;
+    justify-content: space-between;
+}
+.profi{
+    margin-bottom:-400px;
+}
+.sidebook{
+    width: 300px;
+    height: auto;
+
+}
+.forms32{
+    width: 870px;
+    height: 630px;
+}
+.f321{
+    width: 100%;
+    height: auto;
+    gap: 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.formgrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2 , 1fr);
+}
+.formgrid div{
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    height: 82px;
+}
+.formgrid div input{
+    width: 330px;
+    height: 50px;
+
+}
+
+.passgrid{
+    width:100%;
+    height:250px !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.passgrid input{
+    width:90% !important;
+}
+
+@media (max-width:992px){
+    .sidebook{
+        display: none;
+    }
+    .forms32{
+        width: 100%;
+    }
+    .formgrid{
+        grid-template-columns: repeat(1 , 1fr);
+        grid-template-rows:none;
+    }
+    .formgrid div{
+        width: 100%;
+    }
+    .formgrid div input{
+        width: 100%;
+    }
+    .passgrid{
+        margin-top:200px
+    }
+}

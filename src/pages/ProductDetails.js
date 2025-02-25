@@ -1,4 +1,4 @@
-import React , { useState , useEffect } from 'react'
+import React , { useState } from 'react'
 import { useProduct } from '../components/context/ProductsContext'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
@@ -6,9 +6,9 @@ import '../components/css/productsD.css'
 import { FaStar } from 'react-icons/fa6'
 import { FaRegHeart } from "react-icons/fa";
 import Itemcard from '../components/Itemcard';
-import Deel from '../components/icons/icon-delivery.svg';
-import Return from '../components/icons/Icon-return.svg';
 import { useCart } from 'react-use-cart'
+import { LiaShippingFastSolid } from "react-icons/lia";
+import { GrCycle } from "react-icons/gr";
 
 
 function ProductDetails() {
@@ -32,7 +32,6 @@ const data = [
     const { addItem , updateItemQuantity  } = useCart()
 
     const [ pro , setPro ] = useProduct();
-    const [ count , setCount ] = useState(0)
     console.log(pro)
         const stars = Array(5).fill(pro.rating)
         const colors={
@@ -100,7 +99,7 @@ return (
                     <div className='cb'>
                         <div className='cnn'>
                             <button className='run' onClick={() => updateItemQuantity(pro.id, (pro.quantity ?? 0) - 1)}>-</button>
-                            <p className='d-inline pp'>{ pro.quantity ? pro.quantity : 1 } </p>
+                            <p className='d-inline pp d-flex justify-content-around align-items-center'>{ pro.quantity ? pro.quantity : 1 } </p>
                             <button className='run' onClick={() => updateItemQuantity(pro.id, (pro.quantity ?? 0) + 1)}>+</button>
                         </div>
                         <button className='btnx' onClick={() => addItem(pro)}>Buy Now</button>
@@ -108,12 +107,14 @@ return (
                     </div>
                     <div className='days'>
                         <div className='freeD' style={{borderBottom: '1px solid grey'}}>
+                            <LiaShippingFastSolid size={30}/>
                             <div>
                                 <p>Free Delievry</p>
-                                <p style={{fontSize:'12px'}}>Enter your Postal code</p>
+                                <p style={{fontSize:'12px', textDecoration:'underline'}}>Enter your postal code for Delivery Availability</p>
                             </div>
                         </div>
                         <div className='freeD'>
+                            <GrCycle size={30} />
                             <div>
                                 <p>Return Delievry</p>
                                 <p style={{fontSize:'12px'}}>Free 30 Days Delievry Return <u>details</u></p>

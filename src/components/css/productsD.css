@@ -106,9 +106,12 @@
 .freeD{
     width:100%;
     display:flex;
-    justify-content: center;
+    padding-left:30px;
+    justify-content: flex-start;
+    gap:20px;
     align-items: center;
 }
+
 
 @media ( max-width: 992px ){
     .proDetails{

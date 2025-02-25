@@ -3,6 +3,7 @@ import './css/footer.css'
 import Qr from './icons/Qr Code.svg'
 import Play from './icons/Frame 718.svg'
 import Icons from './icons/Frame 741.svg'
+import { LuSendHorizontal } from "react-icons/lu";
 
 
 
@@ -13,7 +14,12 @@ function Footer() {
             <div>
                 <h3>Exclusive</h3>
                 <h4>Subscribe</h4>
-                <input type='email' placeholder='Enter your Email' />
+                <p>Get 10% of your first order</p>
+                <div className='d-flex justify-content-around align-items-center ' style={{width:'217px' , height:'48px', border: '1px solid white', borderRadius:'4px' }}>
+                    <input type='email' className='eims' placeholder='Enter your Email' />
+                    <LuSendHorizontal size={30} color='white' />
+                </div>
+                
             </div>
             <div>
                 <h3>Support</h3>
@@ -53,6 +59,9 @@ function Footer() {
                     </div>
                 </div>
             </div>
+        </div>
+        <div style={{borderTop:'1px solid grey' , width:'100%' , height:'50px',}} className='d-flex justify-content-around align-items-center'>
+            <p style={{color:'grey',fontSize:'18px'}}>© Copyright Rimel 2022. All right reserved</p>
         </div>
     </footer>
   )
